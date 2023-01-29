@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TjARc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu52xP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
+}
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 20px;
+}
+.modernSmartBanner {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.modernSmartBanner.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.modernSmartBanner .box {
+  width: 100%;
+  height: 100%;
+  padding: 25px 15px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.modernSmartBanner .box .left {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modernSmartBanner .box .left .imageBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.modernSmartBanner .box .left .imageBox img {
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modernSmartBanner .box .center {
+  width: calc(100% - 140px);
+  padding: 0 10px;
+  position: relative;
+}
+.modernSmartBanner .box .center .textBox .title {
+  margin: 0 0 5px 0;
+}
+.modernSmartBanner .box .center .textBox .title span {
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+.modernSmartBanner .box .center .textBox .description span {
+  color: #3d3d3d;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+.modernSmartBanner .box .right {
+  width: 80px;
+  height: 100%;
+  display: flex;
+}
+.modernSmartBanner .box .right .buttonBox {
+  width: 100%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.modernSmartBanner .box .right .buttonBox a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 7px;
+  text-decoration: none;
+  color: #757575;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.modernSmartBanner .box .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+}
+.modernSmartBanner .box .close i {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.modernSmartBanner .box .close i:before,
+.modernSmartBanner .box .close i:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  height: 16px;
+  width: 2px;
+  background-color: #3d3d3d;
+}
+.modernSmartBanner .box .close i:before {
+  transform: rotate(45deg);
+}
+.modernSmartBanner .box .close i:after {
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 350px) {
+  .modernSmartBanner .box {
+    flex-wrap: wrap;
+  }
+  .modernSmartBanner .box .center {
+    width: calc(100% - 60px);
+    padding: 0 0 0 15px;
+  }
+  .modernSmartBanner .box .right {
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+}
