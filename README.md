@@ -6,7 +6,7 @@ Html, Sass, Jquery, Ua-Parser
     
 ```js
 // Config
-let smartBannerSettings = {
+let smartBannerConfigs = {
   iOS: "https://apps.apple.com/app",
   android: "https://play.google.com/store",
   huawei: "https://appgallery.huawei.com",
