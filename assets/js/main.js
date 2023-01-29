@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Config
-  let smartBannerSettings = {
+  let smartBannerConfigs = {
     iOS: "https://apps.apple.com/tr/app/google/id284815942",
     android:
       "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
@@ -23,25 +23,25 @@ $(document).ready(function () {
   } else {
     let parser = new UAParser();
     let result = parser.getResult();
-    $(".modernSmartBanner .textBox .title span").text(smartBannerSettings.title);
-    $(".modernSmartBanner .textBox .description span").text(smartBannerSettings.description);
-    $(".modernSmartBanner .buttonBox a").text(smartBannerSettings.buttonName)
+    $(".modernSmartBanner .textBox .title span").text(smartBannerConfigs.title);
+    $(".modernSmartBanner .textBox .description span").text(smartBannerConfigs.description);
+    $(".modernSmartBanner .buttonBox a").text(smartBannerConfigs.buttonName)
     if (result.device.vendor === "Huawei") {
       $(".modernSmartBanner .buttonBox a").attr(
         "href",
-        smartBannerSettings.huawei
+        smartBannerConfigs.huawei
       );
     } else if (result.os.name === "Android") {
       $(".modernSmartBanner .buttonBox a").attr(
         "href",
-        smartBannerSettings.android
+        smartBannerConfigs.android
       );
     } else if (result.os.name === "iOS") {
-      $(".modernSmartBanner .buttonBox a").attr("href", smartBannerSettings.iOS);
+      $(".modernSmartBanner .buttonBox a").attr("href", smartBannerConfigs.iOS);
     }
     setTimeout(function () {
       $(".modernSmartBanner").addClass("active");
-    }, smartBannerSettings.startTime);
+    }, smartBannerConfigs.startTime);
   }
     // Core
 });
