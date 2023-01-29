@@ -1,3 +1,3 @@
 # Modern Smart App Banner
 
-! [alt text](https://imgur.com/AMkZkgs)
+! [Smart Banner](https://i.imgur.com/AMkZkgs.jpg)
