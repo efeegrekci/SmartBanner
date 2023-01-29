@@ -1,7 +1,4 @@
 $(document).ready(function () {
-
-
-
     // Config
   let smartBannerSettings = {
     iOS: "https://apps.apple.com/tr/app/google/id284815942",
